@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        style="?android:attr/progressBarStyleSmall">
+    </android.support.v4.widget.ContentLoadingProgressBar>
+
+
+
+    <Button
+        android:id="@+id/customer_btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorGray"
+        android:onClick="buttonOnClick"
+        android:text="@string/create_button"
+        android:typeface="serif"
+        android:enabled="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/customer_etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_name"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/customer_etSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_surname"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/customer_etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_phone_number"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/customer_etPhoneDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_phone_description"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/customer_etLocationType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_location_type"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/customer_etLocationLatitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_location_latitud"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/customer_etLocationLongitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_location_longitud"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+</LinearLayout>
