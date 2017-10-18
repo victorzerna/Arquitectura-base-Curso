@@ -136,7 +136,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/customer_location_type_layout"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@layout/border">
 
                 <LinearLayout
                     android:id="@+id/customer_location_latitud_layout"

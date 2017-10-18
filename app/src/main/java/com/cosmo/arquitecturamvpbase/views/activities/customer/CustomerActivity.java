@@ -125,7 +125,7 @@ public class CustomerActivity extends BaseActivity<CustomerPresenter> implements
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(CustomerActivity.this, DetailActivity.class);
 //                intent.putExtra(Constants.ITEM_CUSTOMER,customerArrayList.get(position));
-                intent.putExtra(Constants.ITEM_CUSTOMER, position);
+                intent.putExtra(Constants.ITEM_CUSTOMER, String.valueOf(customerArrayList.get(position)));
                 startActivity(intent);
             }
         });
